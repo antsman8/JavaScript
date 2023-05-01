@@ -1,0 +1,17 @@
+let calculator = (function() {
+    let data = { number : 0 };
+    return {
+        sum: function(a) {
+            data.number += a
+        },
+        sub: function(a) {
+            data.number -= a
+        },
+        display: function() {
+            console.log(data.number)
+        }
+    }
+})()
+calculator.sum(3)
+calculator.sub(2)
+calculator.display()
